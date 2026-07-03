@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const work = (await getCollection('work')).sort((a,b) => a.data.order - b.data.order);
+const featured = work.filter(w => w.data.featured);
+const lab = (await getCollection('lab')).sort((a,b) => a.data.order - b.data.order).slice(0, 4);
+---
+<Base title="Jamie Warren — Instructional Designer & Developer">
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Instructional design · Western North Carolina</p>
+      <h1>Learning experiences,<br />and the machinery behind them.</h1>
+      <p class="lede">I design interactive learning and build the pipelines, tools, and component systems that make it hold up — SCORM conversions, Canvas rebuilds, and study tools that run for semesters without a maintenance call.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Selected work</p>
+      <h2>Case studies</h2>
+      <ul class="grid">
+        {featured.map(w => (
+          <li class="card">
+            <h3><a href={`/work/${w.slug}/`}>{w.data.title}</a></h3>
+            <p>{w.data.summary}</p>
+            <span class="meta">{w.data.tools.join(' · ')}</span>
+          </li>
+        ))}
+      </ul>
+      <p style="margin-top:1.5rem;"><a href="/work/">All case studies</a></p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">The Lab</p>
+      <h2>Built for the practice of it</h2>
+      <ul class="grid">
+        {lab.map(l => (
+          <li class="card">
+            <h3>{l.data.link ? <a href={l.data.link}>{l.data.title}</a> : l.data.title}</h3>
+            <p>{l.data.blurb}</p>
+            <span class="meta">{l.data.tags.join(' · ')}</span>
+          </li>
+        ))}
+      </ul>
+      <p style="margin-top:1.5rem;"><a href="/lab/">Everything in the Lab</a></p>
+    </div>
+  </section>
+</Base>
