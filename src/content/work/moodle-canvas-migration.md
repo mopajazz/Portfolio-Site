@@ -39,17 +39,17 @@ systems that turned one-off rescue jobs into repeatable pipelines:
 SCORM 1.2 packages powered by a shared engine — one tested runtime handling API
 calls, gated knowledge checks, and brand styling, so each new lesson is a content
 problem, not an engineering problem.
-→ *Full case study: Moodle Lessons → SCORM]*
+→ Full case study: [Moodle Lessons → SCORM](/work/moodle-lessons-to-scorm/)
 
 **2. A quiz-bank converter.** A custom Moodle XML → QTI tool that survives Canvas's
 stricter-than-spec import validation, carrying multiple choice, matching, and
 short-answer questions across without faculty ever touching XML.
-→ *Full case study: [Moodle XML → QTI Converter]*
+→ Full case study: [Moodle XML → QTI Converter](/work/qti-converter/)
 
 **3. A component system.** A WCAG-minded, Canvas-safe HTML component library —
 documented in a shared knowledge base with a live preview workflow — so every
 rebuilt page is consistent, accessible, and buildable by anyone on the team.
-→ *Lab entry: BRCC HTML Component Library*
+→ Lab entry: [BRCC HTML Component Library](/lab/)
 
 The connective tissue between all three: **solve it once, encode it.** Every
 hard-won fix — a SCORM video failure, a QTI escaping bug, a contrast ratio that
@@ -61,8 +61,7 @@ failed AA — became a documented, reusable pattern instead of tribal knowledge.
 in Canvas upgraded** — more accessible, more consistent, and maintainable by more
 people than the originals. The pipelines and component system became standard
 infrastructure for rebuilds across multiple courses (ACA-122, CIS-110, DME-115),
-ahead of the August 2026 go-live. *(TODO: add final counts — courses rebuilt,
-lessons converted, quiz questions migrated — after go-live.)*
+ahead of the August 2026 go-live.
 
 ### Looking Back
 

@@ -10,9 +10,9 @@ const { Content } = await entry.render();
 ---
 <Base title={`${entry.data.title} — Jamie Warren`} description={entry.data.summary}>
   <article class="study">
-    <p class="eyebrow">Case study</p>
+    <p class="eyebrow">Case study // Jamie Warren</p>
     <h1>{entry.data.title}</h1>
-    {entry.data.link && <p><a href={entry.data.link}>View the live artifact →</a></p>}
+    {entry.data.link && <p><a href={entry.data.link}>View the live artifact</a></p>}
     <Content />
     <p style="margin-top:3rem;"><a href="/work/">← All case studies</a></p>
   </article>

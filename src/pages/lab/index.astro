@@ -6,15 +6,31 @@ const lab = (await getCollection('lab')).sort((a,b) => a.data.order - b.data.ord
 <Base title="Lab — Jamie Warren">
   <section class="band">
     <div class="wrap">
-      <p class="eyebrow">The Lab</p>
+      <p class="eyebrow">The Lab // tools, courses, experiments</p>
       <h1>Built for the practice of it</h1>
-      <p class="lede">Tools, courses, and experiments. Some ship to thousands of students; some exist because building them was the point.</p>
-      <ul class="grid">
-        {lab.map(l => (
-          <li class="card">
-            <h3>{l.data.link ? <a href={l.data.link}>{l.data.title}</a> : l.data.title}</h3>
-            <p>{l.data.blurb}</p>
-            <span class="meta">{l.data.tags.join(' · ')}</span>
+      <p class="lede">Some ship to students; some exist because building them was the point.</p>
+      <ul class="rows">
+        {lab.map((l, i) => (
+          <li>
+            {l.data.link ? (
+              <a class="row" href={l.data.link}>
+                <span class="idx">{String(i+1).padStart(2,'0')}</span>
+                <span>
+                  <span class="row-title">{l.data.title}</span>
+                  <p class="row-summary">{l.data.blurb}</p>
+                  <p class="row-meta">{l.data.tags.join(' / ')}</p>
+                </span>
+              </a>
+            ) : (
+              <div class="row">
+                <span class="idx">{String(i+1).padStart(2,'0')}</span>
+                <span>
+                  <span class="row-title">{l.data.title}</span>
+                  <p class="row-summary">{l.data.blurb}</p>
+                  <p class="row-meta">{l.data.tags.join(' / ')}</p>
+                </span>
+              </div>
+            )}
           </li>
         ))}
       </ul>

@@ -86,8 +86,7 @@ interactive SCORM packages — and each new conversion takes hours, not days.**
 The shared engine and component library became standard infrastructure for the
 college's course rebuilds, extending beyond ACA-122 into CIS-110 and the broader
 migration pipeline, with the workflow documented well enough for others to
-replicate. *(TODO: confirm final conversion count and any faculty/QA feedback
-before publishing.)*
+replicate.
 
 ### Looking Back
 
@@ -103,5 +102,5 @@ people ask to join.
   the identical `index.html` that ships in the SCORM package; the engine's
   defensive API discovery means one file runs in Canvas with full tracking and
   on the open web with none
-- HTML component library preview *(Vercel — link TBD)*
-- Related case study: *Moodle XML → QTI Converter*
+- [BRCC HTML Component Library](/lab/) — the design system behind the rebuilds
+- Related case study: [Moodle XML → QTI Converter](/work/qti-converter/)

@@ -75,8 +75,7 @@ Multiple choice, matching, and short-answer questions import cleanly into Canvas
 faculty never touch XML, and the converter became a standard step in the college's
 course-rebuild pipeline for the August 2026 launch. Just as important: the silent-
 failure modes are gone — a bank either converts completely or reports exactly
-which questions need human eyes. *(TODO: confirm total questions/banks converted
-before publishing.)*
+which questions need human eyes.
 
 ### Looking Back
 
@@ -89,4 +88,4 @@ instead of a live course.
 ### Artifacts
 
 - [Live converter](https://xml-qti-converter.vercel.app/)
-- Related: *The Moodle → Canvas Migration* (umbrella) · *Moodle Lessons → SCORM*
+- Related: [The Moodle → Canvas Migration](/work/moodle-canvas-migration/) · [Moodle Lessons → SCORM](/work/moodle-lessons-to-scorm/)

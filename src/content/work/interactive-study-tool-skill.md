@@ -82,8 +82,7 @@ was generated from a single topic prompt, pushed to GitHub, and auto-deployed to
 Vercel with zero configuration changes. The [skill's own version history](https://github.com/mopajazz/Interactive-Study-Tool-)
 is public: v2.0 shipped the fixed three-panel structure, v3.0 added the
 Interaction Model correction above — the repo itself is evidence this is a
-maintained practice, not a one-off prompt. *(TODO: list any tools in active
-course use — DME-115 and others.)*
+maintained practice, not a one-off prompt.
 
 ### Looking Back
 
@@ -98,11 +97,10 @@ editing: AI for production speed, humans for what's true.
 This project is how I think AI belongs in instructional design: not as a shortcut
 around craft, but as a way to **encode craft so it scales**. The skill is a
 design system, a style guide, and a QA checklist that happens to execute. I've
-published it so others can use or adapt it. *(TODO: link)*
+[published it](https://github.com/mopajazz/Interactive-Study-Tool-) so others can use or adapt it.
 
 ### Artifacts
 
 - [Molecular Glow Lab — chemistry demo](https://teaching-beta.vercel.app/)
 - [Interactive Study Tool skill — GitHub](https://github.com/mopajazz/Interactive-Study-Tool-)
-- Related: *Moodle Lessons → SCORM* ·
-  the BRCC HTML Component Library (Lab)
+- Related: [Moodle Lessons → SCORM](/work/moodle-lessons-to-scorm/) · [BRCC HTML Component Library](/lab/)

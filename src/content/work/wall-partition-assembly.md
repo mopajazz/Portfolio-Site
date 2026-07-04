@@ -80,4 +80,4 @@ response to the two years this one spent succeeding in silence.
 ### Artifacts
 
 - [Wall & Partition Assembly — live review link](https://360.articulate.com/review/content/79b68207-44f5-47f7-a442-1ee10f61b03f/review)
-- Related: *Moodle Lessons → SCORM* (the pipeline this kind of interaction plugs into)
+- Related: [Moodle Lessons → SCORM](/work/moodle-lessons-to-scorm/) — the pipeline this kind of interaction plugs into

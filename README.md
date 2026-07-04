@@ -22,12 +22,6 @@ Point mopajazz.com at the Vercel project when ready.
 - `src/pages/` — one file per route. `work/[...slug].astro` builds every
   case study page from the collection automatically.
 
-## Adding a Maps page later
-1. Add a `maps` collection to `src/content/config.ts`
-2. Drop images in `public/maps/`
-3. Create `src/pages/maps/index.astro` (copy lab/index.astro as a start)
-4. Add `{ href: '/maps/', label: 'Maps' }` to the nav array in Base.astro
-
 ## Open items
 - Component library preview link (Lab entry + ACA-122 study)
 - MKT-120 sample module Vercel link (case study artifact row)
